@@ -1,0 +1,388 @@
+@font-face {
+  font-family: neu;
+  src: url(./font/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+  font-family: neu;
+  font-weight: 100;
+  src: url(./font/NeueHaasDisplayLight.ttf);
+}
+@font-face {
+  font-family: neu;
+  font-weight: 200;
+  src: url(./font/NeueHaasDisplayRoman.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: neu;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#page1 {
+  min-height: 130vh;
+  width: 100%;
+  background-color: #efeae3;
+  position: relative;
+  padding: 0 2vw;
+}
+
+nav {
+  padding: 2vw 0vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+#nav-part2 h4 {
+  padding: 10px 20px;
+  border: 1px solid #8a8a8a89;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000000bb;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+#nav-part2 h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.3s;
+}
+
+#nav-part2 h4:hover::after {
+  bottom: 0;
+  border-radius: 0%;
+}
+
+#nav-part2 h4 a {
+  text-decoration: none;
+  color: #000000bb;
+  position: relative;
+  z-index: 9;
+}
+
+#nav-part2 h4:hover a {
+  color: #fff;
+}
+
+#center {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+  padding-bottom: 2.5vw;
+}
+
+#left {
+  width: 30vw;
+  font-size: 1.8vw;
+  line-height: 2.5vw;
+}
+
+#center h1 {
+  font-size: 10vw;
+  line-height: 8vw;
+  text-align: right;
+}
+
+#page1 video {
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 4vw;
+  position: relative;
+}
+
+#hero-shape {
+  position: absolute;
+
+  width: 46vw;
+  height: 36vw;
+  right: 0;
+  top: 85vh;
+  /*filter: blur(20px);*/
+}
+
+#hero-1 {
+  height: 100%;
+  width: 100%;
+  background-color: #fe350e;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+}
+
+#hero-2 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe350e, #fe480b);
+  filter: blur(10px);
+  border-radius: 50%;
+  position: absolute;
+  animation-name: anime2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+#hero-3 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe350e, #fe480b);
+  border-radius: 50%;
+  filter: blur(25px);
+  position: absolute;
+  animation-name: anime1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(55%, -3%);
+  }
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(-20%, 30%);
+  }
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 8vw 0;
+  position: relative;
+}
+
+#moving-text {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#moving-text h1 {
+  font-size: 9vw;
+  display: inline-block;
+}
+
+#gola {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fe350e;
+  margin: 1vw 2vw;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#page2-bottom {
+  height: 100vh;
+  width: 100%;
+  padding: 4vw 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  z-index: 9;
+}
+
+#page2-bottom h1 {
+  font-size: 4vw;
+  width: 60%;
+  line-height: 4vw;
+  position: relative;
+}
+
+#bottom-part2 {
+  width: 22%;
+}
+#bottom-part2 img {
+  width: 100%;
+  border-radius: 20px;
+}
+#bottom-part2 p {
+  font-weight: 200;
+  margin: 2vw 0;
+  font-size: 2vw;
+}
+
+#prjlink{
+  height: 4vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#prjlink h5{
+  font-size: 2vw;
+}
+.icon {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fe350e;
+  margin: 1vw 2vw;
+}
+
+#page2 #bg-shape {
+  height: 32vw;
+  width: 32vw;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ff9831, #fe330a);
+  filter: blur(20px);
+  animation-name: circle1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+/* 
+#circle1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff9831;
+    top: 60%;
+    left:30%;
+    filter: blur(10px);
+    animation-name: circle1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#bg-shape #circle2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    animation-name: circle2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes circle1 {
+  from {
+    transform: translate(-5%, 10%) skew(0deg);
+  }
+  to {
+    transform: translate(5%, -6%) skew(-10deg);
+  }
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+}
+
+.elem {
+  height: 10vw;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.elem h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+
+.elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.25s;
+}
+
+.elem:hover .overlay {
+  top: 0;
+}
+
+/* #elem-container{
+
+} */
+
+#fixed-image {
+  height: 30vw;
+  width: 25vw;
+  background-color: violet;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 10;
+  left: 51%;
+  top: 20%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
