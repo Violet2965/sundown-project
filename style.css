@@ -260,13 +260,13 @@ nav {
   font-size: 2vw;
 }
 
-#prjlink{
+#prjlink {
   height: 4vw;
   width: 100%;
   display: flex;
   align-items: center;
 }
-#prjlink h5{
+#prjlink h5 {
   font-size: 2vw;
 }
 .icon {
@@ -332,7 +332,7 @@ nav {
 }
 
 #page3 {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-color: #efeae3;
 }
@@ -386,3 +386,120 @@ nav {
   background-size: cover;
   background-position: center;
 }
+
+#page4 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(247, 217, 217);
+  /* background-color: #efeae3; */
+  padding: 2vw 0;
+  position: relative;
+}
+
+#page4 #but {
+  padding: 3vw 2vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#but h4 {
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #8a8a8a89;
+  color: black;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#but a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  z-index: 9;
+}
+#but h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50;
+  transition: all ease 0.3s;
+}
+
+#but h4:hover a {
+  color: #fff;
+}
+
+#but h4:hover::after {
+  bottom: 0;
+  border-radius: 0%;
+}
+
+#black-box {
+  height: 110vh;
+  margin: 0vw 2vw;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+#black-box img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  right: 0;
+}
+
+#tab-sec h2 {
+  position: relative;
+  font-size: 4.5vw;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #504a45;
+}
+#tabs {
+  position: relative;
+  border-left: 2px solid #504a45;
+  padding-left: 2vw;
+}
+#tabs h2 a {
+  position: relative;
+  text-decoration: none;
+}
+#Design {
+  right: 2vw;
+}
+#design {
+  color: #efeae3;
+}
+#black-box #tab-sec {
+  color: #efeae3;
+  display: flex;
+  flex-direction: column;
+  padding: 0 9vw;
+  gap: 14px;
+}
+/* #desc{
+    padding: 1vw 0;
+    font-size: 1.1vw;
+    width: 94%;
+}  */
+#sec2 {
+    display: flex;
+    gap: 0.5vw;
+    padding: 8vw 6vw 0;
+    align-items: center;
+}
+#gol {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #FE330A;
+  }
