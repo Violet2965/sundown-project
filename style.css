@@ -25,11 +25,7 @@ body {
   width: 100%;
   height: 100%;
 }
-#main{
-  background-color: black;
-  position: relative;
-  z-index: 10;
-}
+
 #page1 {
   min-height: 130vh;
   width: 100%;
@@ -451,7 +447,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 #black-box img {
   width: 60%;
@@ -496,70 +491,56 @@ nav {
     width: 94%;
 }  */
 #sec2 {
-    display: flex;
-    gap: 0.5vw;
-    padding: 8vw 6vw 0;
-    align-items: center;
+  display: flex;
+  gap: 0.5vw;
+  padding: 8vw 6vw 0;
+  align-items: center;
 }
 #gol {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    background-color: #FE330A;
-  }
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #fe330a;
+}
 
-  #page5
-  {
-    height: 70vh;
-    width: 100%;
-    background-color: #efeae3;
-    padding: 2vw 8vw;
-  }
-
-  
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      width: 30%;
-      border-left: 1px solid #5a5858;
-      padding: 0 2vw;
-    }
-
-#page6
-{
+#page4swipe {
   height: 100vh;
   width: 100%;
-  background: #efeae3;
+  background-color: #efeae3;
 }
 
-#footer{
-  height: 105vh;
-  width: 100%;
-  background-color: #000;
-  position: fixed;
-  color: #fff;
-  z-index: 9;
-  bottom: 0;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  padding: 1vw 3vw;
+.swiper {
+    width: 100%;
+    min-height: 35vh;
+    padding: 5vw 6vw;
+    padding-right: 6vw;
+    cursor: grab;
 }
 
-#footer h1{
-  font-size: 23vw;
+.swiper-slide {
+    text-align: center;
+    padding-left: 2vw;
+    background: #EFEAE3;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 25px;
+    border-left: 1px solid #a39e9783;
 }
 
-#footer-div{
-  height: 20vh;
-  width: 100%;
-  background-color: red;
+.swiper-slide img {
+    display: inline-block;
+    position: relative;
+    width: 51%;
+    object-fit: cover;
 }
-#footer-bottom{
-  border-top: 1px solid #dadada;
-  height: 10vh;
-  width: 100%;
+
+.swiper-slide p{
+    width: 79%;
+    color: #2a2929f4;
+    font-size: 1.08vw;
+}
+
+.swiper-slide {
+    width: 20%;
 }
